@@ -17,7 +17,11 @@
     <script>
      let h1 = document.getElementById("h1");
      h1.onclick = function(){
-      h1.style.color = "green";
+      if(h1.style.color == "green"){
+       h1.style.color = "blue";
+      } else {
+       h1.style.color = "green";
+      }
      }
     </script>
   </body>
