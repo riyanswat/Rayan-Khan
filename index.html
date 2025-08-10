@@ -1,153 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Rayan Trading — Japanese Vehicle Procurement & Export</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Trading - Your Trusted Japanese Vehicle Exporter</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header>
-  <a href="#home" class="brand" aria-label="Rayan Trading home">
-    <div class="logo" aria-hidden="true">RT</div>
-    <div>
-      Rayan Trading
-      <small>Japanese Vehicle Export</small>
-    </div>
-  </a>
-  <nav class="nav" role="navigation" aria-label="Primary navigation">
-    <a href="#home" class="active" data-link>Home</a>
-    <a href="#shipments" data-link>Recent Shipments</a>
-    <a href="#testimonials" data-link>Testimonials</a>
-    <a href="#about" data-link>About</a>
-    <a href="#contact" data-link>Contact</a>
-  </nav>
-</header>
-
-<main id="app" role="main" tabindex="-1">
-
-  <!-- Home -->
-  <section id="home" class="wrap" role="region" aria-labelledby="home-title">
-    <div class="hero">
-      <div class="hero-card" aria-label="About Rayan Trading">
-        <h1 id="home-title">Trusted Japanese Vehicle Export</h1>
-        <p class="lead">We don’t hold inventory. You want it, we find it — whether cars, trucks, or heavy machinery, shipped directly to your country with full transparency.</p>
-
-        <div class="how-it-works" aria-label="How it works">
-          <strong>How it works</strong>
-          <ol>
-            <li>You tell us the vehicle or machinery you want.</li>
-            <li>We source the best option from Japan's market.</li>
-            <li>We ship it safely and handle all paperwork.</li>
-          </ol>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Rayan<span>Trading</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shipments.html">Recent Shipments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
+    </header>
 
-        <div class="exports-info" aria-label="Types of vehicles exported">
-          <strong>Our range includes:</strong> JDM cars, classic models, vans, trucks, forklifts, construction machinery… and any other imported or classic cars like BMW, Porsche, Mercedes, and more.
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Source & Export Your Dream Vehicle From Japan</h1>
+                    <p class="hero-subtitle">From classic cars to heavy machinery, we are your trusted partner for sourcing and shipping high-quality vehicles worldwide.</p>
+                    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section section-padding">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Tell Us What You Need</h3>
+                        <p>Submit an inquiry with the vehicle you're looking for, and we'll start the search.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">We Source Your Vehicle</h3>
+                        <p>We leverage our extensive network in Japan to find the best options that match your criteria and budget.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Safe & Secure Shipping</h3>
+                        <p>We handle all the logistics and paperwork to ensure your vehicle is shipped safely to your port.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Shipments Preview Section -->
+        <section class="shipments-preview-section section-padding bg-medium">
+            <div class="container">
+                <h2 class="section-title">Recent Shipments</h2>
+                <div id="shipments-preview-grid" class="shipments-grid">
+                    <!-- Shipment cards will be dynamically inserted here by JS -->
+                </div>
+                <div class="text-center">
+                    <a href="shipments.html" class="btn btn-secondary">View All Shipments</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Preview Section -->
+        <section class="testimonials-preview-section section-padding">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div id="testimonials-preview-container" class="testimonials-grid">
+                    <!-- Testimonials will be dynamically inserted here by JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Rayan Trading. All Rights Reserved.</p>
         </div>
-      </div>
-      <aside class="preview" aria-label="Sample recent shipment preview">
-        <div class="img" aria-hidden="true">2022 Toyota Land Cruiser</div>
-        <div class="meta">
-          <div class="chip">Shipped to Ghana</div>
-          <div class="chip">JDM Classic SUV</div>
-        </div>
-        <p style="margin-top:14px; font-size:15px; color:var(--muted);">Delivering reliability and style worldwide.</p>
-      </aside>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Shipments -->
-  <section id="shipments" class="wrap section" role="region" aria-labelledby="shipments-title" hidden>
-    <h2 id="shipments-title">Recent Shipments</h2>
+    <a href="https://wa.me/819012345678" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="whatsapp-float">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-67.6-9.5-97.2-26.7l-7-4.1-72.5 19 19.3-70.5-4.5-7.3c-18.4-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.8-16.2-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
 
-    <div class="controls" aria-label="Filter recent shipments">
-      <select class="select" id="countryFilter" aria-label="Filter shipments by country">
-        <option value="all">All Countries</option>
-      </select>
-      <input type="search" class="search" id="searchShipment" placeholder="Search by model or type" aria-label="Search shipments" />
-    </div>
-
-    <div class="car-grid" id="shipmentsList" tabindex="0" aria-live="polite" aria-relevant="additions removals"></div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="wrap section" role="region" aria-labelledby="testimonials-title" hidden>
-    <h2 id="testimonials-title">Testimonials</h2>
-
-    <div class="testimonial">
-      <p class="quote">"Rayan Trading made it simple. Found exactly the classic truck I wanted and shipped it safely to Nigeria."</p>
-      <footer>— Samuel K., Nigeria</footer>
-    </div>
-
-    <div class="testimonial" style="margin-top:24px;">
-      <p class="quote">"Professional and transparent throughout the process. Highly recommend their service!"</p>
-      <footer>— Amina T., Ghana</footer>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="wrap section" role="region" aria-labelledby="about-title" hidden>
-    <h2 id="about-title">About Rayan Trading</h2>
-    <p>Based in Japan, Rayan Trading specializes in sourcing and exporting Japanese vehicles, trucks, and machinery globally. Our personalized service means you get exactly what you want, shipped safely and handled with care.</p>
-    <p>We focus on transparency, trust, and premium service to clients worldwide who want JDM, classic, or heavy machinery vehicles.</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="wrap section" role="region" aria-labelledby="contact-title" hidden>
-    <h2 id="contact-title">Contact Us</h2>
-
-    <div style="display:flex; flex-wrap:wrap; gap:28px; margin-top:18px;">
-      <aside class="contact-info" aria-label="Contact information">
-        <strong>Contact Info</strong>
-        <p>Email: <a href="mailto:info@rayantrading.jp" style="color: var(--accent);">info@rayantrading.jp</a></p>
-        <p>Phone: <a href="tel:+819012345678" style="color: var(--accent);">+81 90 1234 5678</a></p>
-        <p>Address: Tokyo, Japan</p>
-        <p>We export worldwide. Tell us what you need!</p>
-      </aside>
-
-      <section style="flex:1 1 380px;">
-        <div tabindex="0" role="button" class="inquiry-cta" id="inquiry-cta" aria-describedby="inquiry-desc" tabindex="0" aria-label="Inquiry about market prices and shipping">
-          Got a car in mind and wondering about market prices and shipping options? <br> <strong>Inquire now!</strong>
-        </div>
-        <form id="quote" aria-describedby="form-desc" aria-label="Contact form to inquire about vehicles">
-          <p id="form-desc" style="color:var(--muted); font-size:14px; margin-bottom: 14px;">Fill in your details and message, and we'll get back to you promptly.</p>
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name" />
-
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
-
-          <label for="country">Country *</label>
-          <input type="text" id="country" name="country" required placeholder="Your country" />
-
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Tell us what vehicle or inquiry you have"></textarea>
-
-          <button type="submit" class="btn">Send Inquiry</button>
-        </form>
-      </section>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div>© 2025 Rayan Trading. All rights reserved.</div>
-  <div>Made with&nbsp;❤️&nbsp;in Japan</div>
-</footer>
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/819012345678" target="_blank" rel="noopener" aria-label="Chat with Rayan Trading on WhatsApp" class="whatsapp-float">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="M20.52 3.48a11.9 11.9 0 0 0-16.8 0c-4.66 4.66-4.6 12.21 0 16.87l-1.2 4.44 4.57-1.18a11.9 11.9 0 0 0 13.5-20.13zM12 21.83a9.93 9.93 0 0 1-5.26-1.49l-.38-.23-2.7.7.72-2.63-.25-.42a9.93 9.93 0 1 1 7.87 3.67zM16.18 14.34c-.27-.14-1.58-.78-1.82-.87-.24-.1-.41-.14-.58.14s-.66.87-.81 1.05-.3.2-.56.07a7.3 7.3 0 0 1-2.15-1.33 8.13 8.13 0 0 1-1.5-1.85c-.15-.26-.02-.4.12-.54.12-.12.27-.3.4-.46.13-.15.17-.26.26-.43.08-.16.04-.3-.02-.43-.07-.14-.58-1.42-.79-1.95-.2-.5-.4-.43-.58-.44a1.22 1.22 0 0 0-.56-.07c-.2 0-.44.07-.67.33a2.8 2.8 0 0 0-1.02 2.38 4.27 4.27 0 0 0 1.94 2.78 9.27 9.27 0 0 0 4.54 1.46c.68 0 1.34-.28 1.82-.7a2.7 2.7 0 0 0 .89-2.08c0-.54-.23-.76-.5-.89z"/>
-  </svg>
-</a>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
